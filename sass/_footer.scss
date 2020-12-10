@@ -1,0 +1,49 @@
+
+footer {
+    height: 28vh;
+}
+.redes_sociales {
+    @extend %redes;
+}
+.ig_logo:after {
+    @extend %iconos;
+    background: url('https://api.iconify.design/ant-design:instagram-filled.svg') no-repeat center center / contain;
+ }
+ .ig_logo:hover {
+    @extend %hover_iconos;
+
+ }
+.fb_logo:after {
+@extend %iconos;
+background: url('https://api.iconify.design/raphael:facebook.svg') no-repeat center center / contain;
+
+}
+.fb_logo:hover { 
+    @extend %hover_iconos; 
+
+}
+.tw_logo:after {
+@extend %iconos;
+background: url('https://api.iconify.design/fa-brands:twitter-square.svg') no-repeat center center / contain;
+
+}
+.tw_logo:hover {
+    @extend %hover_iconos;
+}
+.sp_logo:after {
+@extend %iconos;
+background: url('https://api.iconify.design/grommet-icons:spotify.svg') no-repeat center center / contain;
+
+}
+.sp_logo:hover {
+    @extend %hover_iconos;
+}
+.flecha_arriba:after {
+@extend %iconos; 
+background: url('https://api.iconify.design/radix-icons:double-arrow-up.svg') no-repeat center center / contain;
+height: 70px;
+
+}
+.flecha_arriba:hover {
+    @extend %hover_iconos;
+}

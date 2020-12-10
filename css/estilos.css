@@ -1,0 +1,804 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.prensa__titulo, .destacado__titulo {
+  color: #160707;
+  font-family: "Roboto Slab", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.prensa__titulo {
+  color: #160707;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.destacado__texto {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .destacado__texto {
+    padding: 3px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .destacado__texto--hide.destacado__texto {
+    font-size: 0px;
+    padding: -50px;
+  }
+}
+.destacado__texto--grande.destacado__texto {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .destacado__texto--grande.destacado__texto {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+.destacado__texto--negrita.destacado__texto {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+section {
+  text-align: center;
+  height: 100vh;
+}
+
+.redes_sociales {
+  display: block;
+  width: auto;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.flecha_arriba:after, .sp_logo:after, .tw_logo:after, .fb_logo:after, .ig_logo:after {
+  padding: 0px 60px;
+  content: "";
+  width: 2.3em;
+  height: 2.3em;
+  display: inline-block;
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .flecha_arriba:after, .sp_logo:after, .tw_logo:after, .fb_logo:after, .ig_logo:after {
+    padding: 0px 0px;
+  }
+}
+
+.flecha_arriba:hover, .sp_logo:hover, .tw_logo:hover, .fb_logo:hover, .ig_logo:hover {
+  opacity: 0.5;
+  transition: 0.8s;
+}
+
+.landing {
+  background-size: 100%;
+  width: 100%;
+  background-image: url("../multimedia/fotos/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .landing {
+    background-size: 100vh;
+    background-image: url("../multimedia/fotos/6.jpg");
+    background-position: top;
+  }
+}
+
+.flecha_abajo .iconify {
+  color: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.iconify {
+  height: 25px;
+  width: 25px;
+}
+
+.flecha_abajo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main_fondo {
+  height: 70vh;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+  .foto_axel {
+    flex: 1 0 0;
+  }
+}
+@media all and (min-width: 800px) {
+  .destacado_texto, .main_fondo, form {
+    flex: 3 0px;
+  }
+
+  .foto_axel {
+    order: 1;
+  }
+
+  .destacado_texto, .main_fondo {
+    order: 2;
+  }
+
+  .destacado_texto, .flecha_abajo {
+    order: 3;
+  }
+
+  .flecha_abajo {
+    order: 4;
+  }
+}
+/* degrade */
+.foto_axel {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.destacado__gradient1 {
+  height: 100%;
+  background-color: #cbb3ac;
+  background-image: linear-gradient(#cbb3ac, #bbb8b8);
+}
+
+.destacado__gradient2 {
+  height: 100%;
+  background-color: #bbb8b8;
+  background-image: linear-gradient(#bbb8b8, #ebdbdb);
+}
+
+.destacado__gradient3 {
+  height: 100%;
+  background-color: #ebdbdb;
+  background-image: linear-gradient(#ebdbdb, #bbb8b8);
+}
+
+.destacado__gradient4 {
+  height: 100%;
+  background-color: #bbb8b8;
+  background-image: linear-gradient(#bbb8b8, #b1aba9);
+}
+
+.destacado__gradient5 {
+  height: 100%;
+  background-color: #a1a1a1;
+  background-image: linear-gradient(#a1a1a1, #ffffff);
+}
+
+.destacado__gradient6 {
+  height: 100%;
+  background-color: white;
+  /*background-image:
+    linear-gradient(
+      $blanco, whitesmoke
+  );*/
+}
+
+.destacado__gradient7 {
+  height: 100%;
+  background-color: #fffefe;
+  background-image: linear-gradient(#fffefe, #d3d3d3);
+}
+
+.destacado__gradient8 {
+  height: 100%;
+  background-color: #d3d3d3;
+  background-image: linear-gradient(#d3d3d3, #fffefe);
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .about {
+    height: 170vh;
+    overflow: hidden;
+  }
+}
+table {
+  margin: auto;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.destacado__tabla {
+  width: 100vh;
+  color: #626463;
+}
+.destacado__tabla.destacado__tabla--fila {
+  background: transparent;
+  border-bottom: 1px solid;
+}
+@media screen and (max-width: 768px) {
+  .destacado__tabla {
+    width: 250px;
+  }
+  .destacado__tabla.destacado__tabla--hide {
+    color: transparent;
+  }
+  .destacado__tabla.destacado__tabla--fila {
+    display: grid;
+    overflow: hidden;
+  }
+}
+
+.destacado__ticket {
+  color: #160707;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.destacado__ticket.destacado__ticket--grande {
+  font-size: 1rem;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .destacado__ticket.destacado__ticket--grande {
+    font-size: 0.7rem;
+  }
+}
+.destacado__ticket:hover {
+  color: #626463;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  scale: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .destacado__ticket:hover {
+    font-size: 0.9rem;
+  }
+}
+
+.destacado__texto.destacado__texto--grande {
+  font-size: 1.2rem;
+}
+.destacado__texto.destacadp__tecto--chico {
+  font-size: 1em;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.dates {
+  height: 80vh;
+}
+
+legend {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/*-- GALERIA DE FOTOS --*/
+.galeria {
+  height: 140vh;
+}
+
+.galeria_contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row wrap;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.foto_contenedor {
+  padding-top: 20px;
+}
+
+.fotos_contenedor {
+  height: 90%;
+  width: 90%;
+  padding: 0;
+}
+
+.fotos_contenedor:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+  content: "Compra el disco!";
+}
+
+/* MULTIMEDIA Y REDES SOCIALES */
+.galeria_video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor_video {
+  padding: 0 10px 10px;
+}
+
+.video .contenedor_video iframe {
+  width: 100%;
+  height: 250px;
+  padding: 2em;
+}
+
+iframe:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+}
+
+.galeria_musica {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row wrap;
+}
+
+/* boton disco*/
+.container {
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  background-color: #626463;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 8px 10px;
+}
+.text h3 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.text a {
+  text-decoration: none;
+}
+.text a:hover {
+  color: lightsalmon;
+}
+
+.contenedor_musica {
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.music .contenedor_musica iframe {
+  width: 50%;
+}
+
+h3 {
+  font-style: "Roboto", sans-serif;
+  font-size: 1.4em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .video .contenedor_video iframe {
+    height: 220px;
+    width: 300px;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .lista ul li {
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+  }
+
+  .video, .prensa_seccion {
+    height: 190vh;
+  }
+
+  .music {
+    height: 210vh;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  h2 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Roboto Slab", serif;
+    padding: 2px 2px;
+  }
+
+  .galeria_musica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contenedor_musica iframe {
+    height: 60%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .galeria_contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria {
+    height: 250vh;
+  }
+
+  .text {
+    text-align: center;
+    background-color: #626463;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 5px 5px;
+  }
+  .text h3 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
+  .text a {
+    text-decoration: none;
+  }
+  .text a:hover {
+    color: lightsalmon;
+  }
+}
+.prensa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.prensa__articulo {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  border-radius: 15px;
+  margin: 0px 10px;
+}
+
+.otros_artículos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.noches_de_jazz {
+  height: 55%;
+  width: 55%;
+}
+
+.noches_de_jazz:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+}
+
+.argentjazz {
+  height: 55%;
+  width: 55%;
+}
+
+.argentjazz:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+}
+
+.el_intruso {
+  height: 75%;
+  width: 75%;
+}
+
+.el_intruso:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .prensa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+}
+footer {
+  height: 28vh;
+}
+
+.ig_logo:after {
+  background: url("https://api.iconify.design/ant-design:instagram-filled.svg") no-repeat center center/contain;
+}
+
+.fb_logo:after {
+  background: url("https://api.iconify.design/raphael:facebook.svg") no-repeat center center/contain;
+}
+
+.tw_logo:after {
+  background: url("https://api.iconify.design/fa-brands:twitter-square.svg") no-repeat center center/contain;
+}
+
+.sp_logo:after {
+  background: url("https://api.iconify.design/grommet-icons:spotify.svg") no-repeat center center/contain;
+}
+
+.flecha_arriba:after {
+  background: url("https://api.iconify.design/radix-icons:double-arrow-up.svg") no-repeat center center/contain;
+  height: 70px;
+}
+
+nav {
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  text-align: left;
+  overflow: hidden;
+}
+
+nav a::before {
+  content: "";
+  display: flex;
+  height: 6px;
+  background-color: lightgray;
+  top: 8.5%;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+  width: 30px;
+}
+
+/* --------CONTACTO -------------- */
+/* --------formulario animado------------- */
+.contenedor_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+}
+
+form, textarea {
+  font-family: "Roboto", sans-serif;
+  justify-items: center;
+  max-width: 40vh;
+  height: 30vh;
+}
+
+.mapa {
+  height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/**
+* Make the field a flex-container, reverse the order so label is on top.
+*/
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the 
+* pesky delay.
+*/
+label, input {
+  transition: all 0.5s;
+  touch-action: manipulation;
+}
+
+input:not([type=checkbox]) {
+  font-size: 1.4em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0px;
+  cursor: text;
+  justify-items: center;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 5px solid #666;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left;
+  transform: translate(0, 2.125rem) scale(1.4);
+}
+
+/**
+* By default, the placeholder should be transparent. Also, it should 
+* inherit the transition.
+*/
+::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when 
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+.destacado__btn input {
+  background: #160707;
+  font-size: 2em;
+  border: 1px;
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  max-width: 66.66%;
+  letter-spacing: 0.05em;
+  color: lightgray;
+  margin-top: 7px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.destacado__btn input:hover {
+  background: #626463;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.footer_p {
+  margin: 0;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .contenedor_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    height: 150vh;
+  }
+
+  .mapa {
+    height: 30vh;
+  }
+}
