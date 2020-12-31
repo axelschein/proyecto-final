@@ -126,13 +126,11 @@ section {
 /* el index + estilos generales*/
 .landing {
   background-color: black;
-}
-@media screen and (max-width: 768px) {
-  .landing {
-    background-size: 100vh;
-    background-image: url("../multimedia/fotos/6.jpg");
-    background-position: top;
-  }
+  /*@media screen and (max-width: 768px) {
+      background-size: 100vh;
+      background-image: url("../multimedia/fotos/6.jpg");
+      background-position: top;
+    }*/
 }
 
 .masthead_index {
@@ -151,7 +149,7 @@ section {
 @media screen and (max-width: 768px) {
   .masthead_index {
     background-size: 100vh;
-    background-image: url("../multimedia/fotos/6.jpg");
+    background-image: url("../multimedia/Fotos/6.jpg");
     background-position: top;
   }
 }
@@ -962,7 +960,7 @@ input:focus + label {
 @media screen and (max-width: 768px) {
   .masthead_music {
     background-size: 100vh;
-    background-image: url("../multimedia/fotos/6.jpg");
+    background-image: url("../multimedia/Fotos/6.JPG");
     background-position: top;
   }
 }
@@ -1072,7 +1070,7 @@ iframe:hover {
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .video {
-    height: 190vh;
+    height: 192vh;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) {
@@ -1082,17 +1080,17 @@ iframe:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .music {
-    height: 190vh;
+    height: 192vh;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) {
   .music {
-    height: 150vh;
+    height: 153vh;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) and (min-height: 665px) and (max-height: 669px) {
   .music {
-    height: 170vh;
+    height: 171vh;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 700px) {
@@ -1185,7 +1183,7 @@ iframe:hover {
 @media screen and (max-width: 768px) {
   .masthead_galeria {
     background-size: 100vh;
-    background-image: url("../multimedia/fotos/6.jpg");
+    background-image: url("../multimedia/Fotos/6.jpg");
     background-position: top;
   }
 }

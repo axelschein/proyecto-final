@@ -12,7 +12,7 @@
   background: radial-gradient(ellipse at left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 32%, rgba(0,0,0,0.65) 100%), url("../multimedia/Fotos/nuevas_fotos/5.JPG") no-repeat center center scroll;
   @media screen and (max-width: 768px) {
     background-size: 100vh;
-    background-image: url("../multimedia/fotos/6.jpg");
+    background-image: url("../multimedia/Fotos/6.JPG");
     background-position: top;
   }
 }
@@ -100,7 +100,7 @@ iframe:hover {
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .video {
-    height: 190vh;
+    height: 192vh;
     @media screen and (min-width: 375px) and (max-width: 412px) {//iphone x
       height: 170vh;
       
@@ -108,12 +108,12 @@ iframe:hover {
   }
   .music {
     @media screen and (min-width: 375px) and (max-width: 412px) {//iphone x
-      height: 150vh;
+      height: 153vh;
       @media screen and (min-height: 665px) and (max-height: 669px) { //iphone 678
-        height: 170vh;
+        height: 171vh;
       }
     }
-    height: 190vh;
+    height: 192vh;
   }
   .galeria_musica {
     @include flex(column, center, center);
