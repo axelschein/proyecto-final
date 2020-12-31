@@ -1,0 +1,168 @@
+.prensa {
+    @include flex(row, space-evenly, stretch);
+    @media screen and (max-width: 1024px){
+        flex-direction: column;
+    }
+}
+.prensa__titulo {
+        @extend %titulo2;    
+}
+
+.prensa__articulo {
+        @include articles;
+        margin: 0px 10px;       
+}
+.prensa__titulo {
+        @extend %titulo;  
+}
+
+.otros_artículos {
+        @include flex( column, center, center);
+        flex-wrap: wrap;
+        @media screen and (max-width: 768px){
+                flex-direction: row;
+                flex-wrap: nowrap;;
+        }
+}
+.noches_de_jazz {
+        height: 55%;
+        width: 55%;
+}
+.noches_de_jazz:hover {
+        opacity: .5;
+        transition: .9s;
+}
+.argentjazz {
+        height: 55%;
+        width: 55%;
+}
+.argentjazz:hover {
+        opacity: .5;
+        transition: .9s;
+}
+.el_intruso {
+        height: 75%;
+        width: 75%;
+}
+.el_intruso:hover {
+        opacity: .5;
+        transition: .9s;
+}
+/* --FECHAS!-- */
+.dates{
+        height: 80vh;
+}
+table {
+        margin: auto;
+        text-align: center;
+        width: fit-content;
+        .destacado__tabla {
+                width: 100vh;
+                color: $color_animado;    
+                &.destacado__tabla--fila {
+                        background: transparent;
+                        border-bottom: 1px solid;
+                }
+                @media screen and (max-width: 768px)  {
+                        width: 250px;       
+                        &.destacado__tabla--hide {            
+                                color: transparent;
+                        }
+                        &.destacado__tabla--fila {
+                                display: grid;            
+                                overflow: hidden;
+                        }
+                }
+        }   
+        .destacado__ticket {
+                color: $color_principal;
+                font-size: $tamanio_textos;
+                padding-top: 10px;
+                &.destacado__ticket--grande {
+                        font-size: 1rem;
+                        padding: 0;
+    
+                        @media screen and (max-width: 768px)  {
+                                font-size: 0.7rem;
+                        }
+                }     
+        &:hover {
+                color: $color_animado;
+                text-decoration-line: none;
+                scale: 3rem;
+                @media screen and (max-width: 768px)  {
+                        font-size: 1rem;                 
+                }       
+            
+        }
+    
+}
+}
+/*media queries*/
+@media screen and (max-width: 320px) {
+        .prensa_seccion {
+                height: 150vh;
+
+        }
+        
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+        .prensa_seccion {
+                height: 250vh;
+
+        }
+        .dates {
+                height: 100vh;
+        }
+        
+}
+@media screen and (min-width: 370px) and (max-width: 376px) { //iphone x
+        .prensa_seccion {
+                height: 170vh;
+                @media screen and (min-height: 665px) and (max-height: 669px) { //iphone 678
+                        height: 200vh;
+                }
+        }
+        .prensa__articulo {
+                margin-top: 10px;
+
+        }
+        .dates {
+                height: 100vh;
+        }
+}
+@media screen and (min-width: 401px) and (max-width: 449px) { //iphone 678plus
+        .prensa_seccion {
+                height: 170vh;
+
+        }
+        .dates {
+                height: 100vh;
+        }
+        
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+        .prensa_seccion {
+                height: 130vh;
+        }
+        
+}
+@media screen and (min-width: 767px) and (max-width: 769px) {//ipad
+        .prensa_seccion {
+                height: 100vh;
+        }
+        .dates {
+                height: 69vh;
+        }
+        
+}
+@media screen and (min-width: 800px) and (max-width: 1030px) {//ipad pro
+        @media screen and (min-height: 1300px) and (max-height: 1340px) {
+                .dates {
+                        height: 50vh;
+                }     
+        }
+        
+        
+}

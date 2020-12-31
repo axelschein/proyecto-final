@@ -1,259 +1,122 @@
+ /* Aquí estan los textos y los fondos de color*/
+ .hero {
+  font-style: $fuente_titulos;
+  font-weight: bold;
+  z-index: 1;
+  color: #eee;
+  font-size: 11vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+  &.hero_clases {
+    font-size: 5vmin;
+    font-weight: bold;
+    z-index: 1;
+    color: #eee;
+    
+    letter-spacing: 0.05em;
+    line-height: 2;
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+  }
+} 
+
 .destacado__titulo {
     @extend %titulo;
-
 }
-.prensa__titulo {
-    @extend %titulo2;
-
-}
-
-
-table {
-    margin: auto;
-    text-align: center;
-    width: fit-content;
-}
-
-.destacado__tabla {
-    width: 100vh;
-    color: $color_animado;
-    
-    &.destacado__tabla--fila {
-    background: transparent;
-    border-bottom: 1px solid;
-    
-    
-    
-    
-   
-    }
-
-
-    @media screen and (max-width: 768px)  {
-        width: 250px;
-        
-        
-        &.destacado__tabla--hide {
-            
-            color: transparent;
-        }
-       
-        &.destacado__tabla--fila {
-            display: grid;
-            
-            overflow: hidden;
-
-        }
-
-    }
-}
-
-
-.destacado__ticket {
-    color: $color_principal;
-    font-size: $tamanio_textos;
-    padding-top: 10px;
-    
-
-
-    &.destacado__ticket--grande {
-        font-size: 1rem;
-        padding: 0;
-        
-
-        @media screen and (max-width: 768px)  {
-            font-size: 0.7rem;
-            
-            
-        }
-    }
-
-
-    &:hover {
-        color: $color_animado;
-        text-decoration-line: none;
-        scale: 3rem;
-        @media screen and (max-width: 768px)  {
-            font-size: 0.9rem;
-            
-            
-        }
-        
-    }
-
-}
-
-
+// texto de los articulos y de la biografia, puse un tamaño especial para ipads
 .destacado__texto {
-    @extend %parrafo;
-    &.destacado__texto--grande{
-        font-size: $tamanio_textos_grande;  
+  @extend %parrafo;
+  &.destacado__texto--grande{
+    font-size: 1em;
+  }
+  @media screen and (max-width: 768px)  { //saco los titulos de la tabla      
+    &.destacado__texto--hide {            
+      color: transparent;
+      font-size: 0px;
     }
-    &.destacadp__tecto--chico {
-        font-size: 1em;
-        padding-bottom: 0px;
-        margin: 0px;
-    }
+  }
+  &.destacado__texto--chico {
+    font-size: 0.8em;
+    padding-bottom: 0px;
+    margin: 0px;
+    color: $blanco;
+  }
 }
-
-section {
-    @extend %seccion;
+.footer_p {
+    margin: 0;
 }
-.dates{
-    height: 80vh;
-}
-
-
-legend {
-    font-family: $fuente_textos;
-    padding-bottom: 30px;
-    text-transform: uppercase;
-
-}
-
-
-
- 
-
-/*-- GALERIA DE FOTOS --*/
-.galeria {
-    height: 140vh;
-}
-.galeria_contenedor {
-    @include flex(row, center, center);
-    flex-wrap: row wrap;
-    @include articles;
-}
-.foto_contenedor {
-    padding-top: 20px;
-    
-    
-}
-.fotos_contenedor {
-    height: 90%;
-    width: 90%;
-    padding: 0;
-
-}
-.fotos_contenedor:hover {
-    opacity: .5;
-    transition: .9s;
-    content: 'Compra el disco!';
+/* fondo degrade */
+.destacado__gradient1 {
+    height: 100%;
+    background-color: #cbb3ac;
+    background-image:
+      linear-gradient(
+          #cbb3ac, #bbb8b8
+    );
+  }
+  .destacado__gradient2 {
+    height: 100%;
+    background-color: #bbb8b8;
+    background-image:
+      linear-gradient(
+        #bbb8b8, #ebdbdb
+    );
+  }
   
-}
-
-/* MULTIMEDIA Y REDES SOCIALES */
-
-.galeria_video {
-    @include flex(row, center, center);
-    flex-wrap: wrap;
-}
-
-
-
-.contenedor_video {
-    padding: 0 10px 10px;
-      
-}
-
-.video .contenedor_video iframe {
-    width: 100%;
-    height: 250px;
-    padding: 2em;
-}
-
-iframe:hover {
-    opacity: .5;
-    transition: .9s;
-}
-
-.galeria_musica {
-    @include flex(row, center, center);
-    flex-wrap: row wrap;
-}
-/* boton disco*/
-.container {
-    position: relative;
-    width: 80%;
-}
+  .destacado__gradient3 {
+    height: 100%;
+    background-color: #ebdbdb;
+    background-image:
+      linear-gradient(
+        #ebdbdb, #bbb8b8
+    );
+  }
+  .destacado__gradient4 {
+    height: 100%;
+    background-color: #bbb8b8;
+    background-image:
+      linear-gradient(
+        #bbb8b8, #b1aba9
+    );
+  }
+  .destacado__gradient5 {
+    height: 100%;
+    background-color: #a1a1a1;
+    background-image: 
+      linear-gradient(
+          #a1a1a1, #ffffff
+    );
+  }
+  .destacado__gradient6 {
+    height: 100%;
+    background-color: $blanco;
+    /*background-image:
+      linear-gradient(
+        $blanco, whitesmoke
+    );*/
+  }
+  .destacado__gradient7 {
+    height: 100%;
+    background-color:rgb(255, 254, 254);
+    background-image:
+      linear-gradient(
+        rgb(255, 254, 254), #d3d3d3
+    );
+  }
   
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-  
-.middle {
-transition: .5s ease;
-opacity: 0;
-position: absolute;
-top: 50%;
-left: 40%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-text-align: center;
-}
-
-.container:hover .image {
-opacity: 0.3;
-}
-
-.container:hover .middle {
-opacity: 1;
-}
-
-.text {
-text-align: center;
-background-color: $color_animado;
-font-size: 15px;
-border-radius: 20px;
-padding: 8px 10px;
-    & h3 {
-        font-family: $fuente_textos;
-        color: $blanco;
-    }
-    & a {
-        text-decoration: none;
-    }
-    & a:hover {
-        color: lightsalmon;
-    }
-}
-.contenedor_musica {
-    padding: 20px;
-    padding-bottom: 20px;
-}
+  .destacado__gradient8 {
+    height: 100%;
+    background-color:#d3d3d3;
+    background-image:
+      linear-gradient(
+        #d3d3d3, rgb(255, 254, 254)
+    );
+  }
 
 
-.music .contenedor_musica iframe {
-    width: 50%;
-    
-}
-h3 {
-    font-style: $fuente_textos;
-    font-size: 1.4em;
-}
-
-
-/* MEDIA QUERIES */
-
-
-@media screen and (min-width: 300px) and (max-width: 800px) {
-
-    .video .contenedor_video iframe {
-        height: 220px;
-        width: 300px;
-    }
-
-    .contenedor {
-        width: 90%;
-        max-width: 900px;
-        margin: auto;
-    }
-
+@media screen and (min-width: 360px) and (max-width: 800px) {
     .lista ul li {
         font-family: $fuente_titulos;
         text-transform: uppercase;
@@ -262,66 +125,36 @@ h3 {
         font-weight: bold;
         flex-direction: column;
     }
-
-
-    .video, .prensa_seccion {
-        height: 190vh;
-    }
-    .music {
-        height: 210vh;
-    }
-   
     
     h1 {
         text-align: left;
         font-size: 1rem;
-        
+
     }
     h2 {
         color:  white;
         font-size: 1.3rem;
         font-family: $fuente_titulos;
         padding: 2px 2px;
-    }
-    .galeria_musica {
-        @include flex(column, center, center);
-        flex-wrap: wrap;
-    }
-    
-    .contenedor_musica iframe {
-        height: 60%;
-        
-    }
-
-    
-
+    }  
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
-    
-        .galeria_contenedor {
-            @include flex(column, center, center);
-
-        }
-
-        .galeria {
-            height: 250vh;
-        }
-        .text {
-            text-align: center;
-            background-color: $color_animado;
-            font-size: 10px;
-            border-radius: 10px;
-            padding: 5px 5px;
-                & h3 {
-                    font-family: $fuente_textos;
-                    color: $blanco;
-                }
-                & a {
-                    text-decoration: none;
-                }
-                & a:hover {
-                    color: lightsalmon;
-                }
-            }
-
+@media screen and (min-width: 280px) and (max-width: 360px) {
+  .lista ul li {
+      font-family: $fuente_titulos;
+      text-transform: uppercase;
+      color: $blanco;
+      display: flex;
+      font-weight: bold;
+      flex-direction: column;
+  }
+  h1 {
+      text-align: left;
+      font-size: 1rem;
+  }
+  h2 {
+      color:  white;
+      font-size: 1rem;
+      font-family: $fuente_titulos;
+      padding: 2px 1px;
+  }  
 }

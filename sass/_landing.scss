@@ -1,146 +1,43 @@
+/* el index + estilos generales*/
 .landing {
-    background-size: 100%;
-    width: 100%;
-    background-image: url("../multimedia/fotos/fondo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-    
-    // Forma Sass de hacer media queries
-    @media screen and (max-width: 768px) {
-        background-size: 100vh;
-        background-image: url("../multimedia/fotos/6.jpg");
-        background-position: top;
-
-    }
-}
-.flecha_abajo .iconify { 
-    color: white; 
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    
-}
-
-.iconify {
-    height: 25px;
-    width: 25px;
-}
-
-
-.flecha_abajo {
-    @include flex(row, center, center);
-    z-index: 0;
-   
-}
-
-.wrapper {
-    display: flex;  
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-.main_fondo {
-    height: 70vh;
-}
-.wrapper > * {
-    padding: 10px;
-    flex: 1 100%;
+background-color: black;
+@media screen and (max-width: 768px) {
+    background-size: 100vh;
+    background-image: url("../multimedia/fotos/6.jpg");
+    background-position: top;
   }
+}
+section {
+  @extend %seccion;
+}
+.masthead_index {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh; /* if you don't want it to take up the full screen, reduce this number */
+  z-index: 1;
+  position: relative;
+  background-size: cover !important;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 32%, rgba(0,0,0,0.65) 100%), url("../multimedia/Fotos/fondo.jpg") no-repeat center center scroll;
 
-  @media all and (min-width: 600px) {
-    .foto_axel { flex: 1 0 0; }
+  @media screen and (max-width: 768px) {
+    background-size: 100vh;
+    background-image: url("../multimedia/fotos/6.jpg");
+    background-position: top;
   }
+}
+
+@media all and (min-width: 600px) {
+  .foto_axel { flex: 1 0 0; }
+}
   
-  @media all and (min-width: 800px) {
-    .destacado_texto, .main_fondo, form    { flex: 3 0px; }
-    .foto_axel { order: 1; } 
-    .destacado_texto, .main_fondo   { order: 2; }
-    .destacado_texto, .flecha_abajo    { order: 3; }
-    .flecha_abajo {order:4;}
-
-}
-
-/* degrade */
-.foto_axel {
-    border-radius: 50%;
-    box-shadow: $sombra_btns;
-}
-
-.destacado__gradient1 {
-    height: 100%;
-    background-color: #cbb3ac;
-    background-image:
-      linear-gradient(
-         #cbb3ac, #bbb8b8
-    );
-}
-.destacado__gradient2 {
-    height: 100%;
-    background-color: #bbb8b8;
-    background-image:
-      linear-gradient(
-        #bbb8b8, #ebdbdb
-    );
-}
-
-.destacado__gradient3 {
-    height: 100%;
-    background-color: #ebdbdb;
-    background-image:
-      linear-gradient(
-        #ebdbdb, #bbb8b8
-    );
-}
-.destacado__gradient4 {
-    height: 100%;
-    background-color: #bbb8b8;
-    background-image:
-      linear-gradient(
-        #bbb8b8, #b1aba9
-    );
-}
-.destacado__gradient5 {
-    height: 100%;
-    background-color: #a1a1a1;
-    background-image: 
-      linear-gradient(
-         #a1a1a1, #ffffff
-    );
-}
-.destacado__gradient6 {
-    height: 100%;
-    background-color: $blanco;
-    /*background-image:
-      linear-gradient(
-        $blanco, whitesmoke
-    );*/
-}
-.destacado__gradient7 {
-    height: 100%;
-    background-color:rgb(255, 254, 254);
-    background-image:
-      linear-gradient(
-        rgb(255, 254, 254), #d3d3d3
-    );
-}
-
-.destacado__gradient8 {
-    height: 100%;
-    background-color:#d3d3d3;
-    background-image:
-      linear-gradient(
-        #d3d3d3, rgb(255, 254, 254)
-    );
-
-}
-
-@media screen and (min-width: 300px) and (max-width: 800px) {
-    
-    .about {
-        height: 170vh;
-        overflow: hidden;
-    }
+@media all and (min-width: 800px) {
+  .destacado_texto, .main_fondo, form    { flex: 3 0px; }
+  .foto_axel { order: 1; } 
+  .destacado_texto, .main_fondo   { order: 2; }
+  .destacado_texto, .flecha_abajo    { order: 3; }
+  .flecha_abajo {order:4;}
 }
