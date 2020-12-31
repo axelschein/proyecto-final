@@ -149,7 +149,7 @@ section {
 @media screen and (max-width: 768px) {
   .masthead_index {
     background-size: 100vh;
-    background-image: url("../multimedia/Fotos/6.jpg");
+    background-image: url("../multimedia/Fotos/6.JPG");
     background-position: top;
   }
 }
@@ -1183,7 +1183,7 @@ iframe:hover {
 @media screen and (max-width: 768px) {
   .masthead_galeria {
     background-size: 100vh;
-    background-image: url("../multimedia/Fotos/6.jpg");
+    background-image: url("../multimedia/Fotos/6.JPG");
     background-position: top;
   }
 }
