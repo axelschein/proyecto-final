@@ -101,9 +101,14 @@ iframe:hover {
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .video {
     height: 192vh;
+    @media screen and (min-height: 565px) and (max-height: 570px) { //iphone 5
+      height: 230vh;
+    }
     @media screen and (min-width: 375px) and (max-width: 412px) {//iphone x
       height: 170vh;
-      
+      @media screen and (min-height: 665px) and (max-height: 669px) { //iphone 678
+        height: 189vh;
+      }
     }
   }
   .music {
