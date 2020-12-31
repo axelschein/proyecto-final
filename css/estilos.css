@@ -500,7 +500,7 @@ table .destacado__ticket:hover {
     height: 69vh;
   }
 }
-@media screen and (min-width: 800px) and (max-width: 1030px) and (min-height: 1300px) and (max-height: 1340px) {
+@media screen and (min-width: 800px) and (max-width: 1030px) {
   .dates {
     height: 50vh;
   }
@@ -854,7 +854,7 @@ input:focus + label {
     height: 160vh;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+@media screen and (min-width: 801px) and (max-width: 1025px) {
   .contenedor_form {
     display: flex;
     flex-direction: column;
@@ -865,12 +865,19 @@ input:focus + label {
   .contact {
     height: 100vh;
   }
-
+}
+@media screen and (min-width: 801px) and (max-width: 1025px) and (min-height: 1360px) and (max-height: 1370px) {
+  .contact {
+    height: 110vh;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1025px) {
   .mapa {
     height: 50vh;
     width: 80vw;
   }
-
+}
+@media screen and (min-width: 801px) and (max-width: 1025px) {
   .clases {
     height: 150vh;
   }
@@ -933,14 +940,14 @@ input:focus + label {
     height: 160vh;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 769px) {
+@media screen and (min-width: 767px) and (max-width: 800px) {
   .about {
     height: 80vh;
   }
 }
-@media screen and (min-width: 950px) and (max-width: 1025px) {
+@media screen and (min-width: 800px) and (max-width: 1025px) {
   .about {
-    height: 100vh;
+    height: 60vh;
   }
 }
 .masthead_music {
@@ -1173,7 +1180,11 @@ iframe:hover {
 }
 @media screen and (min-width: 801px) and (max-width: 1025px) {
   .video {
-    height: 130vh;
+    height: 80vh;
+  }
+
+  .music {
+    height: 50vh;
   }
 }
 .masthead_galeria {

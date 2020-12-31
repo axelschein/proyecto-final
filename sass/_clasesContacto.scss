@@ -225,12 +225,16 @@ input:focus + label {
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+@media screen and (min-width: 801px) and (max-width: 1025px) {
     .contenedor_form {
         @include flex (column, center, center);
     }
     .contact {
         height: 100vh;
+        @media screen and (min-height: 1360px) and (max-height: 1370px) { //ipad pro
+            height: 110vh;
+            
+        }
     }
     .mapa {
         height: 50vh;
