@@ -825,6 +825,7 @@ input:focus + label {
   .mapa {
     height: 50vh;
     width: 80vw;
+    border: 0;
   }
 
   .clases {
