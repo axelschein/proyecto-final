@@ -1075,47 +1075,47 @@ iframe:hover {
   transition: 0.9s;
 }
 
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .video {
     height: 192vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) and (min-height: 565px) and (max-height: 570px) {
+@media screen and (min-width: 280px) and (max-width: 700px) and (min-height: 565px) and (max-height: 570px) {
   .video {
     height: 230vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) and (min-height: 571px) and (max-height: 664px) {
+@media screen and (min-width: 280px) and (max-width: 700px) and (min-height: 571px) and (max-height: 664px) {
   .video {
     height: 200vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) {
+@media screen and (min-width: 280px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) {
   .video {
     height: 170vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) and (min-height: 665px) and (max-height: 669px) {
+@media screen and (min-width: 280px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) and (min-height: 665px) and (max-height: 669px) {
   .video {
     height: 189vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .music {
     height: 192vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) {
+@media screen and (min-width: 280px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) {
   .music {
     height: 153vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) and (min-height: 665px) and (max-height: 669px) {
+@media screen and (min-width: 280px) and (max-width: 700px) and (min-width: 375px) and (max-width: 412px) and (min-height: 665px) and (max-height: 669px) {
   .music {
     height: 171vh;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .galeria_musica {
     display: flex;
     flex-direction: column;
@@ -1124,26 +1124,26 @@ iframe:hover {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .contenedor_musica {
     padding: 10px 10px;
     align-self: center;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .music .contenedor_musica iframe {
     border: 0;
     width: 280px;
     height: 350px;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .music_player {
     width: 350px;
     height: 450px;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 280px) and (max-width: 700px) {
   .video .contenedor_video iframe {
     height: 220px;
     width: 300px;
